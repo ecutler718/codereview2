@@ -1,19 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <script src="jquery/jquery-1.12.0.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-    <script src="js/review.js"></script>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
 
 
-    <title></title>
+    <title>Vacation</title>
   </head>
-
   <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>WHERE WILL YOU GO ON VACATION???</h1>
+        <p>To give you a vacation suggestion we ned to know a little more about you</p>
+      </div>
+
+      <form id="questions">
+        <div class="panel panel-default">
+          <div class="panel-body">
+              <label for="age">enter a number</label>
+              <input id="age" type="text">
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <label for="drink">Coffee or Tea</label>
+            <select id="hobbies">
+              <option value="coffee">coffee</option>
+              <option value="tea">tea</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <label for="temp">Do you like hot or cold places</label>
+            <select id="temp">
+              <option value="hot">hot</option>
+              <option value="cold">cold</option>
+            </select>
+          </div>
+        </div>
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <label for="politics">Trump or anyone else</label>
+              <select id="politics">
+                <option value="trump">Trump</option>
+                <option value="other">anyone else</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <label for="teacher">Why become teacher? </label>
+              <select id="teacher">
+                <option value="Money">Money</option>
+                <option value="Power">Power</option>
+              </select>
+            </div>
+          </div>
+
+
+
+          <button type="submit" class="btn">Where should you go on vacation</button>
+      </form>
+
+      <div id="result1">
+        <p>You should go to SOME RUINS<img src="img/ruins.jpeg" alt="picture"> </p>
+      </div>
+      <div id="result2">
+        <p>You should go to ROME<img src="img/rome.jpeg" alt="picture"> </p>
+      </div>
+      <div id="result3">
+        <p>You should go to BORABORA<img src="img/borabora.jpeg" alt="picture"> </p>
+      </div>
+      <div id="result4">
+        <p>You should go to THE FUTURE <img src="img/thefuture.jpg" alt="picture"></p>
+      </div>
+      <div id="result5">
+        <p>You should go to DUBAI<img src="img/dubai.jpg" alt="picture"></p>
+      </div>
+    </div>
   </body>
 </html>
